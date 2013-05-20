@@ -17,8 +17,8 @@
 		2689D1781749A9F3001542E7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2689D1771749A9F3001542E7 /* Default@2x.png */; };
 		2689D17A1749A9F3001542E7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2689D1791749A9F3001542E7 /* Default-568h@2x.png */; };
 		2689D17D1749A9F3001542E7 /* PZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2689D17C1749A9F3001542E7 /* PZViewController.m */; };
-		2689D1801749A9F3001542E7 /* PZViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2689D17E1749A9F3001542E7 /* PZViewController_iPhone.xib */; };
-		2689D1831749A9F3001542E7 /* PZViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2689D1811749A9F3001542E7 /* PZViewController_iPad.xib */; };
+		2689D1801749A9F3001542E7 /* PZViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2689D17E1749A9F3001542E7 /* PZViewController.xib */; };
+		2689D18B1749AA92001542E7 /* UIResponder+lockdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 2689D18A1749AA92001542E7 /* UIResponder+lockdown.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +37,9 @@
 		2689D1791749A9F3001542E7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2689D17B1749A9F3001542E7 /* PZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PZViewController.h; sourceTree = "<group>"; };
 		2689D17C1749A9F3001542E7 /* PZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PZViewController.m; sourceTree = "<group>"; };
-		2689D17F1749A9F3001542E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PZViewController_iPhone.xib; sourceTree = "<group>"; };
-		2689D1821749A9F3001542E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PZViewController_iPad.xib; sourceTree = "<group>"; };
+		2689D17F1749A9F3001542E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PZViewController.xib; sourceTree = "<group>"; };
+		2689D1891749AA92001542E7 /* UIResponder+lockdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+lockdown.h"; sourceTree = "<group>"; };
+		2689D18A1749AA92001542E7 /* UIResponder+lockdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+lockdown.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +90,10 @@
 				2689D1731749A9F3001542E7 /* PZAppDelegate.m */,
 				2689D17B1749A9F3001542E7 /* PZViewController.h */,
 				2689D17C1749A9F3001542E7 /* PZViewController.m */,
-				2689D17E1749A9F3001542E7 /* PZViewController_iPhone.xib */,
-				2689D1811749A9F3001542E7 /* PZViewController_iPad.xib */,
+				2689D17E1749A9F3001542E7 /* PZViewController.xib */,
 				2689D16A1749A9F3001542E7 /* Supporting Files */,
+				2689D1891749AA92001542E7 /* UIResponder+lockdown.h */,
+				2689D18A1749AA92001542E7 /* UIResponder+lockdown.m */,
 			);
 			path = lockdown;
 			sourceTree = "<group>";
@@ -166,8 +168,7 @@
 				2689D1761749A9F3001542E7 /* Default.png in Resources */,
 				2689D1781749A9F3001542E7 /* Default@2x.png in Resources */,
 				2689D17A1749A9F3001542E7 /* Default-568h@2x.png in Resources */,
-				2689D1801749A9F3001542E7 /* PZViewController_iPhone.xib in Resources */,
-				2689D1831749A9F3001542E7 /* PZViewController_iPad.xib in Resources */,
+				2689D1801749A9F3001542E7 /* PZViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +182,7 @@
 				2689D1701749A9F3001542E7 /* main.m in Sources */,
 				2689D1741749A9F3001542E7 /* PZAppDelegate.m in Sources */,
 				2689D17D1749A9F3001542E7 /* PZViewController.m in Sources */,
+				2689D18B1749AA92001542E7 /* UIResponder+lockdown.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,20 +197,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		2689D17E1749A9F3001542E7 /* PZViewController_iPhone.xib */ = {
+		2689D17E1749A9F3001542E7 /* PZViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2689D17F1749A9F3001542E7 /* en */,
 			);
-			name = PZViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		2689D1811749A9F3001542E7 /* PZViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2689D1821749A9F3001542E7 /* en */,
-			);
-			name = PZViewController_iPad.xib;
+			name = PZViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -279,6 +273,7 @@
 				GCC_PREFIX_HEADER = "lockdown/lockdown-Prefix.pch";
 				INFOPLIST_FILE = "lockdown/lockdown-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -290,6 +285,7 @@
 				GCC_PREFIX_HEADER = "lockdown/lockdown-Prefix.pch";
 				INFOPLIST_FILE = "lockdown/lockdown-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
